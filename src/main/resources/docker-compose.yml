@@ -1,0 +1,7 @@
+services:
+  mysftpFirst:
+    image: atmoz/sftp
+    ports:
+      - "22:22"
+    command: ["reborn_user:password:::ftp"]
+    entrypoint: "/entrypoint"
